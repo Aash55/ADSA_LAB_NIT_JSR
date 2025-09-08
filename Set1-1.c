@@ -42,6 +42,7 @@ char peek(struct stack* stack) {
 
 // Function to get precedence of operators
 int precedence(char op) {
+    
     if(op=='+'||op=='-')
     return 1;
     if(op=='*'||op=='/')
