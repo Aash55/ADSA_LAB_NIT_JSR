@@ -4,10 +4,21 @@
 int stack1[SIZE], stack2[SIZE];
 int top1 = -1, top2 = -1;
 
-void push1(int x) { stack1[++top1] = x; }
-int pop1() { return stack1[top1--]; }
-void push2(int x) { stack2[++top2] = x; }
-int pop2() { return stack2[top2--]; }
+void push1(int x) {
+     stack1[++top1] = x;
+     }
+
+int pop1() {
+     return stack1[top1--];
+     }
+
+void push2(int x) {
+     stack2[++top2] = x;
+     }
+     
+int pop2() {
+     return stack2[top2--];
+     }
 
 // Costly push (enqueue)
 void enqueue(int x) {
