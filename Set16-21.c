@@ -23,16 +23,6 @@ typedef struct PriorityQueue {
     int size;
 } PriorityQueue;
 
-// Function Prototypes
-int calculate_manhattan(int board[]);
-int is_goal(int board[]);
-Node* create_node(int board[], int g, int h, Node* parent);
-void insert_pq(PriorityQueue* pq, Node* node);
-Node* extract_min_pq(PriorityQueue* pq);
-void print_board(int board[]);
-void print_path(Node* goal_node);
-void solve_puzzle(int initial_board[]);
-
 // Directions for the blank space (row, col)
 int dr[] = {-1, 1, 0, 0}; // Up, Down, Left, Right
 int dc[] = {0, 0, -1, 1};

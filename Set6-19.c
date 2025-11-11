@@ -8,7 +8,8 @@ int num_items;
 int* weights;
 int* values;
 
-/**
+/*
+*
  * @brief Backtracking function to solve the 0/1 Knapsack problem.
  * * @param index The current item index being considered (from 0 to num_items-1).
  * @param current_weight The total weight of items currently included in the knapsack.
